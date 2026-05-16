@@ -1,0 +1,267 @@
+:root {
+  color: #111827;
+  background: #eef2f7;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 380px;
+  min-height: 520px;
+}
+
+button {
+  border: 0;
+  font: inherit;
+}
+
+.popup-shell {
+  width: 380px;
+  min-height: 520px;
+  background: #f8fafc;
+}
+
+.topbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 18px 14px;
+  background: #111827;
+  color: #f8fafc;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  color: #fbbf24;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.icon-button {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 8px;
+  background: #243042;
+  color: #f8fafc;
+  cursor: pointer;
+}
+
+.icon-button:disabled {
+  cursor: progress;
+  opacity: 0.65;
+}
+
+svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
+.spin {
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr minmax(110px, auto);
+  gap: 10px;
+  align-items: stretch;
+  padding: 14px 14px 10px;
+  background: #e5edf6;
+}
+
+.summary > div,
+.mute-all {
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.summary > div {
+  padding: 10px;
+}
+
+.summary span {
+  display: block;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.summary p {
+  margin: 4px 0 0;
+  color: #526175;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.mute-all {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 110px;
+  padding: 0 12px;
+  color: #ffffff;
+  background: #d9480f;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.mute-all:disabled {
+  color: #667085;
+  background: #d8dee8;
+  cursor: default;
+}
+
+.tab-list {
+  display: grid;
+  gap: 8px;
+  max-height: 374px;
+  margin: 0;
+  padding: 12px;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.tab-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: stretch;
+  min-height: 74px;
+  border: 1px solid #d9e2ee;
+  border-radius: 8px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.tab-card.muted {
+  opacity: 0.72;
+}
+
+.tab-main {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) 18px;
+  gap: 10px;
+  align-items: center;
+  min-width: 0;
+  padding: 12px;
+  color: inherit;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tab-main:hover {
+  background: #f3f6fb;
+}
+
+.favicon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 8px;
+  background: #edf2f7;
+  color: #d9480f;
+}
+
+.favicon img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.tab-copy {
+  min-width: 0;
+}
+
+.tab-copy strong,
+.tab-copy small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tab-copy strong {
+  color: #182233;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.tab-copy small {
+  margin-top: 4px;
+  color: #697586;
+  font-size: 12px;
+}
+
+.tab-actions {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border-left: 1px solid #d9e2ee;
+}
+
+.tab-actions button {
+  display: grid;
+  width: 44px;
+  place-items: center;
+  color: #293548;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.tab-actions button:hover {
+  background: #eef2f7;
+}
+
+.tab-actions button + button {
+  border-top: 1px solid #d9e2ee;
+}
+
+.empty-state {
+  display: grid;
+  min-height: 340px;
+  place-items: center;
+  align-content: center;
+  gap: 12px;
+  padding: 32px;
+  color: #667085;
+  text-align: center;
+}
+
+.empty-state svg {
+  width: 34px;
+  height: 34px;
+  color: #d9480f;
+}
+
+.empty-state p {
+  max-width: 240px;
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.45;
+}

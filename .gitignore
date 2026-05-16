@@ -1,0 +1,28 @@
+node_modules/
+dist/
+.DS_Store
+npm-debug.log*
+
+# Logs
+logs/
+*.log
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime and editor noise
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+
+# Build and cache output
+.vite/
+coverage/
+*.tsbuildinfo
+
+# Chrome Web Store packages
+*.zip
+*.crx
+*.pem

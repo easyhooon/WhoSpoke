@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">누가 소리를 내었는가? meme banner</title>
+  <desc id="desc">A playful original meme-style banner for the WhoSpoke Chrome extension.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#101828"/>
+      <stop offset="0.58" stop-color="#18324f"/>
+      <stop offset="1" stop-color="#3a241b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#000000" flood-opacity=".32"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity=".26">
+    <rect x="88" y="82" width="170" height="104" rx="12" fill="#f8fafc"/>
+    <rect x="282" y="82" width="170" height="104" rx="12" fill="#f8fafc"/>
+    <rect x="476" y="82" width="170" height="104" rx="12" fill="#f8fafc"/>
+    <rect x="670" y="82" width="170" height="104" rx="12" fill="#f8fafc"/>
+    <rect x="864" y="82" width="170" height="104" rx="12" fill="#f8fafc"/>
+    <rect x="158" y="220" width="170" height="104" rx="12" fill="#f8fafc"/>
+    <rect x="352" y="220" width="170" height="104" rx="12" fill="#f8fafc"/>
+    <rect x="546" y="220" width="170" height="104" rx="12" fill="#f8fafc"/>
+    <rect x="740" y="220" width="170" height="104" rx="12" fill="#f8fafc"/>
+    <rect x="934" y="220" width="170" height="104" rx="12" fill="#f8fafc"/>
+  </g>
+  <g transform="translate(740 315)" filter="url(#shadow)">
+    <circle cx="0" cy="0" r="122" fill="#f8fafc"/>
+    <circle cx="-42" cy="-20" r="13" fill="#111827"/>
+    <circle cx="42" cy="-20" r="13" fill="#111827"/>
+    <path d="M-45 48c33 24 73 24 106 0" fill="none" stroke="#111827" stroke-width="13" stroke-linecap="round"/>
+    <path d="M-125-88c-42 5-78 28-105 67" fill="none" stroke="#f15a24" stroke-width="18" stroke-linecap="round"/>
+    <path d="M-145-28c-38 3-72 18-101 46" fill="none" stroke="#f15a24" stroke-width="14" stroke-linecap="round" opacity=".9"/>
+    <path d="M124-88c42 5 78 28 105 67" fill="none" stroke="#f15a24" stroke-width="18" stroke-linecap="round"/>
+    <path d="M144-28c38 3 72 18 101 46" fill="none" stroke="#f15a24" stroke-width="14" stroke-linecap="round" opacity=".9"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="78" y="370" width="620" height="150" rx="24" fill="#f8fafc"/>
+    <path d="M660 444l72 40-93 20z" fill="#f8fafc"/>
+    <text x="118" y="430" fill="#111827" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="48" font-weight="900">누가 소리를</text>
+    <text x="118" y="490" fill="#d9480f" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="58" font-weight="900">내었는가?</text>
+  </g>
+  <g transform="translate(124 118)" filter="url(#shadow)">
+    <rect x="0" y="0" width="410" height="124" rx="18" fill="#111827" stroke="#fbbf24" stroke-width="4"/>
+    <path d="M42 54h32l45-42v104L74 74H42V54Z" fill="#f8fafc"/>
+    <path d="M146 38c15 12 22 27 22 47s-7 35-22 47" fill="none" stroke="#f15a24" stroke-width="10" stroke-linecap="round"/>
+    <text x="196" y="52" fill="#f8fafc" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="28" font-weight="900">WhoSpoke</text>
+    <text x="196" y="88" fill="#fbbf24" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="20" font-weight="800">Find the noisy tab</text>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "누가 소리를 내었는가?",
+  "short_name": "WhoSpoke",
+  "version": "0.1.0",
+  "description": "소리 나는 Chrome 탭을 찾아 이동하거나 음소거합니다.",
+  "action": {
+    "default_title": "누가 소리를 내었는가?",
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icons/icon-16.svg",
+      "32": "icons/icon-32.svg",
+      "48": "icons/icon-48.svg",
+      "128": "icons/icon-128.svg"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon-16.svg",
+    "32": "icons/icon-32.svg",
+    "48": "icons/icon-48.svg",
+    "128": "icons/icon-128.svg"
+  },
+  "permissions": ["tabs"]
+}
