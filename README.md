@@ -16,7 +16,7 @@ Android 개발자 관점에서 보면 `public/background.js`는 백그라운드�
 
 ## 현재 기능
 
-<img width="640" height="400" alt="screenshot-640x400" src="https://github.com/user-attachments/assets/83034552-0235-4029-b449-51d33be0ad1f" />
+<img width="640" height="400" alt="image" src="https://github.com/user-attachments/assets/04c6b9b2-1ad8-4d00-9c44-5001d3ec290f" />
 
 - 소리 나는 탭 목록 표시
 - 탭 제목, 도메인, 파비콘 표시
