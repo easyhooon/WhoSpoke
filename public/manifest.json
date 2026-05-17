@@ -3,7 +3,7 @@
   "name": "누가 소리를 내었는가?",
   "short_name": "WhoSpoke",
   "version": "0.1.0",
-  "description": "소리 나는 Chrome 탭을 찾아 이동하거나 음소거합니다.",
+  "description": "소리 나는 탭을 찾아 이동, 음소거, 닫기를 빠르게 할 수 있는 Chrome 확장 프로그램입니다.",
   "action": {
     "default_title": "누가 소리를 내었는가?",
     "default_popup": "index.html",
