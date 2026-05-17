@@ -1,6 +1,7 @@
 # 누가 소리를 내었는가?
 
 <img width="800" height="452" alt="누가 기침소리를 내었는가" src="https://github.com/user-attachments/assets/fcad3fd4-08d7-46d6-8921-f3faf165f31b" />
+
 수십 개의 Chrome 탭 중 어디서 소리가 나는지 바로 찾고, 해당 탭으로 이동하거나 음소거하거나 닫는 Chrome Extension입니다.
 
 ## 기술 선택
