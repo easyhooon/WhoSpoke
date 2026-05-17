@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="WhoSpoke icon">
-  <rect width="128" height="128" rx="28" fill="#111827"/>
-  <path d="M25 56h19l26-24v64L44 72H25V56Z" fill="#f8fafc"/>
-  <path d="M82 43c6 5.2 9 12.2 9 21s-3 15.8-9 21" fill="none" stroke="#f15a24" stroke-width="10" stroke-linecap="round"/>
-  <path d="M99 32c9 8.4 13.5 19 13.5 32S108 87.6 99 96" fill="none" stroke="#f15a24" stroke-width="8" stroke-linecap="round" opacity=".8"/>
-</svg>
