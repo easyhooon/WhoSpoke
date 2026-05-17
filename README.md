@@ -2,7 +2,7 @@
 
 <img width="800" height="452" alt="누가 기침소리를 내었는가" src="https://github.com/user-attachments/assets/fcad3fd4-08d7-46d6-8921-f3faf165f31b" />
 
-수십 개의 Chrome 탭 중 어디서 소리가 나는지 바로 찾고, 해당 탭으로 이동하거나 음소거하거나 닫는 Chrome Extension입니다.
+수십 개의 Chrome 탭 중 어떤 탭에서 소리가 나는지 바로 확인하고, 해당 탭으로 이동하거나 음소거하거나 닫는 Chrome Extension입니다.
 
 ## 기술 선택
 
@@ -15,6 +15,8 @@
 Android 개발자 관점에서 보면 `public/background.js`는 백그라운드에서 배지 카운트를 관리하는 얇은 서비스 워커이고, `src/popup/App.tsx`는 툴바 아이콘을 눌렀을 때 열리는 작은 화면입니다.
 
 ## 현재 기능
+
+<img width="640" height="400" alt="screenshot-640x400" src="https://github.com/user-attachments/assets/83034552-0235-4029-b449-51d33be0ad1f" />
 
 - 소리 나는 탭 목록 표시
 - 탭 제목, 도메인, 파비콘 표시
