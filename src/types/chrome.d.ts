@@ -1,4 +1,8 @@
 declare namespace chrome {
+  namespace i18n {
+    function getMessage(messageName: string, substitutions?: string | string[]): string;
+  }
+
   namespace tabs {
     interface MutedInfo {
       muted: boolean;

@@ -8,6 +8,7 @@ import {
   VolumeX,
   X
 } from "lucide-react";
+import { t } from "./i18n";
 
 type AudibleTab = chrome.tabs.Tab & {
   id: number;
@@ -24,12 +25,12 @@ function isControllableTab(tab: chrome.tabs.Tab): tab is AudibleTab {
 }
 
 function hostFromUrl(url?: string) {
-  if (!url) return "주소 없음";
+  if (!url) return t("noAddress");
 
   try {
     return new URL(url).hostname.replace(/^www\./, "");
   } catch {
-    return "내부 페이지";
+    return t("internalPage");
   }
 }
 
@@ -59,7 +60,7 @@ export function App() {
   const loadTabs = useCallback(async () => {
     if (!hasChromeTabsApi()) {
       setState("error");
-      setError("Chrome 확장 프로그램 팝업에서 열어주세요.");
+      setError(t("openInExtensionPopup"));
       return;
     }
 
@@ -71,7 +72,7 @@ export function App() {
       setState("idle");
     } catch {
       setState("error");
-      setError("소리 나는 탭을 가져오지 못했습니다.");
+      setError(t("loadTabsError"));
     }
   }, []);
 
@@ -117,13 +118,13 @@ export function App() {
       <header className="topbar">
         <div>
           <p className="eyebrow">WhoSpoke</p>
-          <h1>누가 소리를 내었는가?</h1>
+          <h1>{t("extensionName")}</h1>
         </div>
         <button
-          aria-label="새로고침"
+          aria-label={t("refresh")}
           className="icon-button"
           disabled={state === "loading"}
-          title="새로고침"
+          title={t("refresh")}
           type="button"
           onClick={loadTabs}
         >
@@ -131,14 +132,14 @@ export function App() {
         </button>
       </header>
 
-      <section className="summary" aria-label="소리 탭 요약">
+      <section className="summary" aria-label={t("audioTabsSummary")}>
         <div>
           <span>{audibleCount}</span>
-          <p>재생 중</p>
+          <p>{t("playing")}</p>
         </div>
         <div>
           <span>{mutedCount}</span>
-          <p>음소거</p>
+          <p>{t("muted")}</p>
         </div>
         <button
           type="button"
@@ -147,7 +148,7 @@ export function App() {
           onClick={muteAll}
         >
           <VolumeX />
-          모두 끄기
+          {t("muteAll")}
         </button>
       </section>
 
@@ -159,10 +160,10 @@ export function App() {
       ) : tabs.length === 0 ? (
         <section className="empty-state">
           <Search />
-          <p>지금 소리 내는 탭이 없습니다.</p>
+          <p>{t("noAudibleTabs")}</p>
         </section>
       ) : (
-        <ul className="tab-list" aria-label="소리 나는 탭">
+        <ul className="tab-list" aria-label={t("audibleTabs")}>
           {tabs.map((tab) => {
             const isMuted = Boolean(tab.mutedInfo?.muted);
 
@@ -181,7 +182,7 @@ export function App() {
                     )}
                   </span>
                   <span className="tab-copy">
-                    <strong>{tab.title || "제목 없는 탭"}</strong>
+                    <strong>{tab.title || t("untitledTab")}</strong>
                     <small>{hostFromUrl(tab.url)}</small>
                   </span>
                   <ExternalLink />
@@ -189,16 +190,16 @@ export function App() {
 
                 <div className="tab-actions">
                   <button
-                    aria-label={isMuted ? "음소거 해제" : "음소거"}
-                    title={isMuted ? "음소거 해제" : "음소거"}
+                    aria-label={isMuted ? t("unmute") : t("muted")}
+                    title={isMuted ? t("unmute") : t("muted")}
                     type="button"
                     onClick={() => toggleMute(tab)}
                   >
                     {isMuted ? <Volume2 /> : <VolumeX />}
                   </button>
                   <button
-                    aria-label="탭 닫기"
-                    title="탭 닫기"
+                    aria-label={t("closeTab")}
+                    title={t("closeTab")}
                     type="button"
                     onClick={() => closeTab(tab)}
                   >

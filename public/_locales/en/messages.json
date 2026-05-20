@@ -1,0 +1,50 @@
+{
+  "extensionName": {
+    "message": "Who made that sound?"
+  },
+  "extensionDescription": {
+    "message": "Find noisy Chrome tabs and quickly switch to, mute, or close them."
+  },
+  "refresh": {
+    "message": "Refresh"
+  },
+  "audioTabsSummary": {
+    "message": "Audio tabs summary"
+  },
+  "playing": {
+    "message": "Playing"
+  },
+  "muted": {
+    "message": "Muted"
+  },
+  "muteAll": {
+    "message": "Mute all"
+  },
+  "openInExtensionPopup": {
+    "message": "Open this from the Chrome extension popup."
+  },
+  "loadTabsError": {
+    "message": "Could not load tabs that are playing audio."
+  },
+  "noAudibleTabs": {
+    "message": "No tabs are making sound right now."
+  },
+  "audibleTabs": {
+    "message": "Tabs playing audio"
+  },
+  "noAddress": {
+    "message": "No address"
+  },
+  "internalPage": {
+    "message": "Internal page"
+  },
+  "untitledTab": {
+    "message": "Untitled tab"
+  },
+  "unmute": {
+    "message": "Unmute"
+  },
+  "closeTab": {
+    "message": "Close tab"
+  }
+}

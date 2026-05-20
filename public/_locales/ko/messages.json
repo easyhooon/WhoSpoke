@@ -1,0 +1,50 @@
+{
+  "extensionName": {
+    "message": "누가 소리를 내었는가?"
+  },
+  "extensionDescription": {
+    "message": "소리 나는 탭을 찾아 이동, 음소거, 닫기를 빠르게 할 수 있는 Chrome 확장 프로그램입니다."
+  },
+  "refresh": {
+    "message": "새로고침"
+  },
+  "audioTabsSummary": {
+    "message": "소리 탭 요약"
+  },
+  "playing": {
+    "message": "재생 중"
+  },
+  "muted": {
+    "message": "음소거"
+  },
+  "muteAll": {
+    "message": "모두 끄기"
+  },
+  "openInExtensionPopup": {
+    "message": "Chrome 확장 프로그램 팝업에서 열어주세요."
+  },
+  "loadTabsError": {
+    "message": "소리 나는 탭을 가져오지 못했습니다."
+  },
+  "noAudibleTabs": {
+    "message": "지금 소리 내는 탭이 없습니다."
+  },
+  "audibleTabs": {
+    "message": "소리 나는 탭"
+  },
+  "noAddress": {
+    "message": "주소 없음"
+  },
+  "internalPage": {
+    "message": "내부 페이지"
+  },
+  "untitledTab": {
+    "message": "제목 없는 탭"
+  },
+  "unmute": {
+    "message": "음소거 해제"
+  },
+  "closeTab": {
+    "message": "탭 닫기"
+  }
+}

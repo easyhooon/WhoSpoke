@@ -7,6 +7,7 @@
 ## 기술 선택
 
 - Chrome Extension Manifest V3
+- Chrome Extension i18n API
 - Vite
 - React
 - TypeScript
