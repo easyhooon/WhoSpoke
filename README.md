@@ -33,3 +33,43 @@ Chrome Extensions의 `chrome.tabs` API는 최근 몇 초 동안 소리를 낸 �
 
 - [Chrome Tabs API](https://developer.chrome.com/docs/extensions/reference/api/tabs)
 - [Manifest V3 개요](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3)
+
+---
+
+# Who made that sound?
+
+WhoSpoke is a Chrome extension that helps you quickly find which tab is currently playing audio. It lists only the noisy tabs, then lets you switch to, mute, unmute, or close them from a small toolbar popup.
+
+Chrome already shows a speaker icon on tabs that are making sound. That works well when you only have a few tabs open. It becomes much less convenient when you work with dozens of tabs, multiple Chrome windows, or an external monitor setup.
+
+WhoSpoke was built for those moments when you can hear something playing somewhere, but do not want to scan every tab bar by hand.
+
+## Tech Stack
+
+- Chrome Extension Manifest V3
+- Chrome Extension i18n API
+- Vite
+- React
+- TypeScript
+- lucide-react
+
+`public/background.js` is a small service worker that keeps the toolbar badge count up to date. `src/popup/App.tsx` renders the popup UI shown when the toolbar icon is clicked.
+
+## Features
+
+- Lists tabs that are currently playing audio
+- Shows each tab's title, domain, and favicon
+- Switches to the selected tab and focuses its window
+- Mutes or unmutes individual tabs
+- Closes noisy tabs
+- Mutes all currently playing tabs at once
+- Shows the number of playing tabs in the toolbar badge
+- Supports English and Korean UI strings
+
+## Official References
+
+The extension uses the Chrome `tabs` API. `Tab.audible` identifies tabs that have recently played audio, and `chrome.tabs.update(tabId, { muted })` controls tab-level mute state.
+
+- [Chrome Tabs API](https://developer.chrome.com/docs/extensions/reference/api/tabs)
+- [Manifest V3 overview](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3)
+- [Chrome i18n API](https://developer.chrome.com/docs/extensions/reference/api/i18n)
